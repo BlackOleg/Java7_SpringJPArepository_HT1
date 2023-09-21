@@ -25,7 +25,7 @@ public class PersonsService {
     }
 
     public List<Persons> findByPersonId_AgeLessThan(int age) {
-        return personsRepository.findByPersonId_AgeLessThan(age, Sort.by(Sort.Direction.ASC,"age"));
+        return personsRepository.findByPersonId_AgeLessThan(age, Sort.by(Sort.Direction.ASC,"PersonId_Age"));
     }
 
     public Optional<Persons> findByPersonId_NameAndPersonId_Surname(String name, String surname) {
